@@ -253,7 +253,7 @@ async def handle_message(m: Message):
         file = await bot.send_file(
             PRIVATE_CHAT_ID,
             file=data["direct_link"],
-            user_name=message.from_user.first_name
+            user_name=message.from_user.first_name,
             thumb=thumbnail if thumbnail else None,
             progress_callback=progress_bar,
             caption=f"""
