@@ -72,7 +72,7 @@ async def start(m: UpdateNewMessage):
             from_peer=PRIVATE_CHAT_ID,
             id=[int(fileid)],
             to_peer=m.chat.id,
-            drop_author=False,
+            drop_author=True,
             noforwards=False,
             background=True,
             drop_media_captions=False,
@@ -178,7 +178,7 @@ async def handle_message(m: Message):
                 from_peer=PRIVATE_CHAT_ID,
                 id=[int(fileid)],
                 to_peer=m.chat.id,
-                drop_author=False,
+                drop_author=True,
                 noforwards=False,
                 background=True,
                 drop_media_captions=False,
@@ -262,7 +262,7 @@ Direct Link: [Click Here](https://t.me/MaviTerabox_bot?start={uuid})
 
 @mavimods2
 """,
-            supports_streaming=True,
+            supports_streaming=False,
             spoiler=True,
         )
 
@@ -320,7 +320,7 @@ Direct Link: [Click Here](https://t.me/MaviTerabox_bot?start={uuid})
                 id=[file.id],
                 to_peer=m.chat.id,
                 top_msg_id=m.id,
-                drop_author=False,
+                drop_author=True,
                 noforwards=False,
                 background=True,
                 drop_media_captions=False,
