@@ -44,8 +44,7 @@ async def start(m: UpdateNewMessage):
       
     # Check if the user is a member of both channels
     channel1 = "@mavimods2"
-    channel2 = "@mavibot_support"  # Replace with the actual username of yon
-    ur second channel
+    channel2 = "@mavibot_support"  # Replace with the actual username of your second channel
 
     if not await is_user_on_chat(bot, channel1, m.peer_id) or not await is_user_on_chat(bot, channel2, m.peer_id):
         return await m.reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐣𝐨𝐢𝐧 @mavimods2 𝐚𝐧𝐝 @mavibot_support 𝐛𝐞𝐟𝐨𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐭𝐡𝐞 𝐛𝐨𝐭.")
