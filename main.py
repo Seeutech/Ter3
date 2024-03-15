@@ -72,10 +72,10 @@ async def start(m: UpdateNewMessage):
             from_peer=PRIVATE_CHAT_ID,
             id=[int(fileid)],
             to_peer=m.chat.id,
-            drop_author=True,
+            drop_author=False,
             noforwards=False,
             background=True,
-            drop_media_captions=True,
+            drop_media_captions=False,
             with_my_score=True,
         )
     )
@@ -178,10 +178,10 @@ async def handle_message(m: Message):
                 from_peer=PRIVATE_CHAT_ID,
                 id=[int(fileid)],
                 to_peer=m.chat.id,
-                drop_author=True,
+                drop_author=False,
                 noforwards=False,
                 background=True,
-                drop_media_captions=True,
+                drop_media_captions=False,
                 with_my_score=True,
             )
         )
@@ -320,10 +320,10 @@ Direct Link: [Click Here](https://t.me/MaviTerabox_bot?start={uuid})
                 id=[file.id],
                 to_peer=m.chat.id,
                 top_msg_id=m.id,
-                drop_author=True,
+                drop_author=False,
                 noforwards=False,
                 background=True,
-                drop_media_captions=True,
+                drop_media_captions=False,
                 with_my_score=True,
             )
         )
