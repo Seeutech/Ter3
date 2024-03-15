@@ -42,7 +42,7 @@ async def start(m: UpdateNewMessage):
 𝐒𝐞𝐧𝐝 𝐦𝐞 𝐭𝐞𝐫𝐚𝐛𝐨𝐱 𝐯𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 & 𝐈 𝐰𝐢𝐥𝐥 𝐬𝐞𝐧𝐝 𝐕𝐢𝐝𝐞𝐨.
 
 𝐏𝐋𝐀𝐍'𝐒 : /plans"""
-    mention = "["+user_name+"](tg://user?id="+str(user_id)+")
+    mention = "["+user_name+"](tg://user?id="+str(user_id)+")"
     # Check if the user is a member of both channels
     channel1 = "@mavimods2"
     channel2 = "@mavibot_support"  # Replace with the actual username of your second channel
