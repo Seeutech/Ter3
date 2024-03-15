@@ -75,7 +75,7 @@ async def start(m: UpdateNewMessage):
             drop_author=True,
             noforwards=False,
             background=True,
-            drop_media_captions=False,
+            drop_media_captions=True,
             with_my_score=True,
         )
     )
@@ -181,7 +181,7 @@ async def handle_message(m: Message):
                 drop_author=True,
                 noforwards=False,
                 background=True,
-                drop_media_captions=False,
+                drop_media_captions=True,
                 with_my_score=True,
             )
         )
@@ -253,14 +253,13 @@ async def handle_message(m: Message):
         file = await bot.send_file(
             PRIVATE_CHAT_ID,
             file=data["direct_link"],
-            user_name=message.from_user.first_name,
             thumb=thumbnail if thumbnail else None,
             progress_callback=progress_bar,
             caption=f"""
 File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
 Direct Link: [Click Here](https://t.me/MaviTerabox_bot?start={uuid})
-{user_name}
+
 @mavimods2
 """,
             supports_streaming=True,
@@ -324,7 +323,7 @@ Direct Link: [Click Here](https://t.me/MaviTerabox_bot?start={uuid})
                 drop_author=True,
                 noforwards=False,
                 background=True,
-                drop_media_captions=False,
+                drop_media_captions=True,
                 with_my_score=True,
             )
         )
