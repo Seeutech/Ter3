@@ -34,7 +34,6 @@ db = redis.Redis(
     decode_responses=True,
 )
 
-Ade f
 @bot.on(events.NewMessage(pattern="/start$", incoming=True, outgoing=False))
 async def start(m: UpdateNewMessage):
     reply_text = f"""
