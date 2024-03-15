@@ -34,18 +34,19 @@ db = redis.Redis(
     decode_responses=True,
 )
 
-
+Ade f
 @bot.on(events.NewMessage(pattern="/start$", incoming=True, outgoing=False))
 async def start(m: UpdateNewMessage):
     reply_text = f"""
- 𝐇𝐞𝐥𝐥𝐨! {user_name} 𝐈 𝐚𝐦 𝐓𝐞𝐫𝐚𝐛𝐨𝐱 𝐕𝐢𝐝𝐞𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭.
+ 𝐇𝐞𝐥𝐥𝐨! 𝐈 𝐚𝐦 𝐓𝐞𝐫𝐚𝐛𝐨𝐱 𝐕𝐢𝐝𝐞𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭.
 𝐒𝐞𝐧𝐝 𝐦𝐞 𝐭𝐞𝐫𝐚𝐛𝐨𝐱 𝐯𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 & 𝐈 𝐰𝐢𝐥𝐥 𝐬𝐞𝐧𝐝 𝐕𝐢𝐝𝐞𝐨.
 
 𝐏𝐋𝐀𝐍'𝐒 : /plans"""
-     user_name = message.from_user.first_name 
+      
     # Check if the user is a member of both channels
     channel1 = "@mavimods2"
-    channel2 = "@mavibot_support"  # Replace with the actual username of your second channel
+    channel2 = "@mavibot_support"  # Replace with the actual username of yon
+    ur second channel
 
     if not await is_user_on_chat(bot, channel1, m.peer_id) or not await is_user_on_chat(bot, channel2, m.peer_id):
         return await m.reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐣𝐨𝐢𝐧 @mavimods2 𝐚𝐧𝐝 @mavibot_support 𝐛𝐞𝐟𝐨𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐭𝐡𝐞 𝐛𝐨𝐭.")
@@ -254,13 +255,14 @@ async def handle_message(m: Message):
         file = await bot.send_file(
             PRIVATE_CHAT_ID,
             file=data["direct_link"],
+            user_name=message.from_user.first_name
             thumb=thumbnail if thumbnail else None,
             progress_callback=progress_bar,
             caption=f"""
 File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
 Direct Link: [Click Here](https://t.me/MaviTerabox_bot?start={uuid})
-
+{user_name}
 @mavimods2
 """,
             supports_streaming=True,
