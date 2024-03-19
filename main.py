@@ -39,8 +39,7 @@ async def start(m: UpdateNewMessage):
     reply_text = f"""
  𝐇𝐞𝐥𝐥𝐨! 𝐈 𝐚𝐦 𝐓𝐞𝐫𝐚𝐛𝐨𝐱 𝐕𝐢𝐝𝐞𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭.
 𝐒𝐞𝐧𝐝 𝐦𝐞 𝐭𝐞𝐫𝐚𝐛𝐨𝐱 𝐯𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 & 𝐈 𝐰𝐢𝐥𝐥 𝐬𝐞𝐧𝐝 𝐕𝐢𝐝𝐞𝐨.
-
-𝐏𝐋𝐀𝐍'𝐒 : /plans"""
+"""
       
     # Check if the user is a member of both channels
     channel1 = "@seeustore"
@@ -260,7 +259,7 @@ File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
 Direct Link: [Click Here](https://t.me/up_tonybot?start={uuid})
 
-@mavimods2
+@seeustore
 """,
             supports_streaming=False,
             spoiler=True,
