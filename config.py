@@ -10,5 +10,5 @@ PORT = "12475"  # redis port
 PASSWORD = "hkuQOvjFdcqoaq8BySscAhO1knX6Ep3Q"  # redis password
 
 PRIVATE_CHAT_ID = -1002095112878  # CHAT WHERE YOU WANT TO STORE VIDEOS
-COOKIE = ""  # COOKIE FOR AUTHENTICATION (get from chrome dev tools) ex: "PANWEB=1; csrfToken=; lang=en; TSID=; __bid_n=; _ga=; __stripe_mid=; ndus=; browserid==; ndut_fmt=; _ga_06ZNKL8C2E=" (dont use this)
+COOKIE = "csrfToken=eZe_c7wnEyEQuXAhqKGIO7oX; browserid=SNJyk88vk2TxnJ4XDSRo_xYaJi16IRZnZfBCqAAx0InRjiFlpjKx9rxtr0g=; lang=en; TSID=LQBhQzRQOfJv6fNN4EpHoxzzrYapZv2M; ndut_fmt=17F719166D023802EE5FE7A6D9114A5102A2FCAA7EA6E322C255F80006E4B846; __bid_n=18db57360d140e47304207"  # COOKIE FOR AUTHENTICATION (get from chrome dev tools) ex: "PANWEB=1; csrfToken=; lang=en; TSID=; __bid_n=; _ga=; __stripe_mid=; ndus=; browserid==; ndut_fmt=; _ga_06ZNKL8C2E=" (dont use this)
 ADMINS = [7193524341]
