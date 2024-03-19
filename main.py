@@ -137,8 +137,8 @@ async def get_message(m: Message):
 
 async def handle_message(m: Message):
     # Define the channels
-    channel1 = "@mavimods2"
-    channel2 = "@mavibot_support" # Replace with your second channel
+    channel1 = "@seeustore"
+    channel2 = "@stark_movies_seeu" # Replace with your second channel
 
     # Check if the user is a member of both channels
     check_channel1 = await is_user_on_chat(bot, channel1, m.peer_id)
