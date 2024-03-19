@@ -259,7 +259,7 @@ File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
 Direct Link: [Click Here](https://t.me/up_tonybot?start={uuid})
 
-@seeustore
+@terao2
 """,
             supports_streaming=False,
             spoiler=True,
@@ -283,7 +283,7 @@ File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
 Direct Link: [Click Here](https://t.me/up_tonybot?start={uuid})
 
-@seeustore
+@terao2
 """,
             progress_callback=progress_bar,
             thumb=thumbnail if thumbnail else None,
