@@ -258,7 +258,7 @@ async def handle_message(m: Message):
             caption=f"""
 File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
-Direct Link: [Click Here](https://t.me/MaviTerabox_bot?start={uuid})
+Direct Link: [Click Here](https://t.me/up_tonybot?start={uuid})
 
 @mavimods2
 """,
@@ -282,7 +282,7 @@ Direct Link: [Click Here](https://t.me/MaviTerabox_bot?start={uuid})
             caption=f"""
 File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
-Direct Link: [Click Here](https://t.me/MaviTerabox_bot?start={uuid})
+Direct Link: [Click Here](https://t.me/up_tonybot?start={uuid})
 
 @mavimods2
 """,
