@@ -24,8 +24,9 @@ from tools import (
     is_user_on_chat,
 )
 
+from keep_alive import keep_alive
+keep_alive()
 bot = TelegramClient("tele", API_ID, API_HASH)
-
 
 db = redis.Redis(
     host=HOST,
@@ -33,11 +34,11 @@ db = redis.Redis(
     password=PASSWORD,
     decode_responses=True,
 )
-
+                     
 @bot.on(events.NewMessage(pattern="/start$", incoming=True, outgoing=False))
 async def start(m: UpdateNewMessage):
      # Add the URL of the image you want to include
-    image_url = "https://i.ibb.co/kQJsrVk/white.png"
+    image_url = "https://i.ibb.co/KQJsrVk/white.png"
       # Generate the Markdown-formatted text for the message
     reply_text = f"""
  𝐇𝐞𝐥𝐥𝐨! 𝐈 𝐚𝐦 𝐓𝐞𝐫𝐚𝐛𝐨𝐱 𝐕𝐢𝐝𝐞𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭.
