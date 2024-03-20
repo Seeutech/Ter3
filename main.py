@@ -24,10 +24,6 @@ from tools import (
     is_user_on_chat,
 )
 
-from keep_alive import keep_alive
-keep_alive()
-bot = TelegramClient("tele", API_ID, API_HASH)
-
 db = redis.Redis(
     host=HOST,
     port=PORT,
